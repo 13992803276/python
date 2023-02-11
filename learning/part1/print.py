@@ -13,10 +13,10 @@ print(1 + 3)
 # 输出到文件
 # 1:"a+" 的意思是指定目录不存在当前文件时会自动新建文件
 # 2:输出到文件时必须使用 file=xxxx
+# 3:当文件存在时，重复执行写入操作，不会创建新文件，而是在已有文件中添加
 fp = open('/Users/lexu/Desktop/works/leaning/python/learning/part1/text.txt', 'a+')
 print("hello world", file=fp)
 fp.close()
 
 # 不换行输出
 print('hello', 'world', 'python')
-
